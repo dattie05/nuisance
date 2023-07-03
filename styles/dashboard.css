@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+::selection {
+    background-color: #487732;
+    color: #FFB400;
+}
+
+* {
+    font-family: 'Libre Baskerville', serif;
+}
+
+body {
+    margin: 0;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: -webkit-fill-available;
+    padding: 0 4%;
+}
+
+.top img {
+    height: 115px;
+    width: 450px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.top h2 span {
+    color: rgb(17,169,212);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 4%;
+    background-color: #169600;
+    border-top: solid 5px #487732;
+}
+
+nav > div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+nav > div p {
+    font-weight: 500;
+    font-size: 1em;
+}
+
+nav > div:nth-child(1) p {
+    color: #FFB400;
+}
+
+nav > div:nth-child(2) a {
+    text-decoration: none;
+    color: #FFB400;
+}
+
+.side-bar {
+    width: 425px;
+    border-right: solid thin #169600;
+}
+
+.side-bar a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: black;
+    border: solid thin #169600;
+    border-radius: 10px;
+    text-align: center;
+    margin: 4% auto;
+    transition: all .3s;
+    width: 60%;
+}
+
+.side-bar .active {
+    display: block;
+    background-color: #169600;
+    color: white;
+    transform: translate(8px, 0);
+}
+
+.side-bar a:hover {
+    background-color: #169600;
+    color: white;
+}
+
+.side-bar h1 {
+    text-align: center;
+}
+
+.side-bar h1::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 80%;
+    background-color: #169600;
+    margin: auto;
+}
+
+main {
+    display: flex;
+    padding: 2% 0;
+    max-height: 92vh;
+}
+
+.nuisances-content {
+    display: none;
+    width: -webkit-fill-available;
+    padding: 0 4%;
+    overflow-y: scroll;
+}
+
+.crumb-bread {
+    font-weight: 700;
+}
+
+.crumb-bread a {
+    text-decoration: none;
+    color: black;
+}
+
+.crumb-bread span {
+    color: #169600;
+    font-style: italic;
+}
+
+.nuisances-content h2 {
+    text-align: center;
+}
+
+.welcome {
+    width: -webkit-fill-available;
+    padding: 0 4%;
+    overflow-y: auto;
+}
+
+.welcome h2 {
+    text-align: center;
+}
+
+table {
+    width: -webkit-fill-available;
+    border: solid thin black;
+    border-collapse: collapse;
+}
+
+table th, tr, td {
+    border: solid thin black;
+    border-collapse: collapse;
+    padding: 8px;
+    word-break: normal;
+    text-align: center;
+}
+
+table tr:nth-child(2n-2) {
+    background-color: #487732;
+    color: white;
+}
+
+table th:nth-child(1) {
+    width: 5%;
+}
+
+table th:nth-child(2) {
+    width: 15%;
+}
+
+table th:nth-child(3) {
+    width: 20%;
+}
+
+table th:nth-child(4) {
+    width: 20%;
+}
+
+table th:nth-child(5) {
+    width: 20%;
+}
+
+table th:nth-child(6) {
+    width: 20%;
+}
+
+table td:nth-child(6) a {
+    text-decoration: none;
+    color: red;
+    padding: 0 2%;
+}
+
+#users table td:nth-child(6) a:nth-child(1) {
+    text-decoration: none;
+    color: #FFB400;
+    padding: 0 2%;
+}
+
+#users table th:nth-child(1) {
+    width: 5%;
+}
+
+#users table th:nth-child(2) {
+    width: 15%;
+}
+
+#users table th:nth-child(3) {
+    width: 20%;
+}
+
+#users table th:nth-child(4) {
+    width: 20%;
+}
+
+#users table th:nth-child(5) {
+    width: 15%;
+}
+
+#users table th:nth-child(6) {
+    width: 25%;
+}
+
+.error {
+    color: red;
+    font-weight: 700;
+    text-align: center;
+}
+
+.success {
+    color: green;
+    font-weight: 700;
+    text-align: center;
+}
+
+form {
+    width: 450px;
+    padding: 2% 4%;
+    border: solid medium rgb(17,169,212);
+    background-color: white;
+}
+
+form label {
+    display: block;
+    margin-top: 4%;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+form input {
+    display: block;
+    padding: 10px;
+    background-color: transparent;
+    border: solid thin rgb(17,169,212);
+    width: -webkit-fill-available;
+}
+
+form input:focus {
+    outline: none;
+    background-color: rgba(17,169,212, 0.4);
+}
+
+form h1 {
+    margin: 1% auto;
+    text-align: center;
+}
+
+form h1::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 80%;
+    margin: 1% auto;
+    background-color: rgb(17,169,212);
+}
+
+form button {
+    all: unset;
+    padding: 10px;
+    text-align: center;
+    width: 25%;
+    font-weight: 600;
+    border: solid thin rgb(17,169,212);
+    float: right;
+    margin-top: 4%;
+    transition: all .3s;
+}
+
+form button:hover {
+    cursor: pointer;
+    background-color: rgb(17,169,212);
+    color: white;
+}
+
+form button:focus {
+    cursor: pointer;
+    background-color: rgb(17,169,212);
+    color: white;
+}
+
+select {
+    width: -webkit-fill-available;
+    padding: 10px;
+    font-size: 1em;
+    border: solid thin rgb(17,169,212);
+    transition: all .3s;
+}
+
+select:focus {
+    outline: none;
+}
+
+select option {
+    text-align: center;
+    transition: all .3s;
+}
+
+select option:hover {
+    cursor: pointer;
+    background-color: rgba(17,169,212, 0.2);
+}
+
+.form {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+}
+
+form p {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: right;
+}
+
+form p i:hover {
+    cursor: pointer;
+}
+
+.add-user {
+    display: block;
+    border: solid thin #169600;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    margin: 2% auto;
+    width: fit-content;
+    border-radius: 10px;
+    transition: all .3s;
+}
+
+.add-user:hover {
+    background-color: #169600;
+    color: white;
+}

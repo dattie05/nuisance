@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+* {
+    font-family: 'Libre Baskerville', serif;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2% 0;
+}
+
+form {
+    width: 450px;
+    padding: 2% 4%;
+    border: solid medium rgb(17,169,212);
+}
+
+form label {
+    display: block;
+    margin-top: 4%;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+form input {
+    display: block;
+    padding: 10px;
+    background-color: transparent;
+    border: solid thin rgb(17,169,212);
+    width: -webkit-fill-available;
+}
+
+form input:focus {
+    outline: none;
+    background-color: rgba(17,169,212, 0.4);
+}
+
+form h1 {
+    margin: 1% auto;
+    text-align: center;
+}
+
+form h1::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 80%;
+    margin: 1% auto;
+    background-color: rgb(17,169,212);
+}
+
+form button {
+    all: unset;
+    padding: 10px;
+    text-align: center;
+    width: 25%;
+    font-weight: 600;
+    border: solid thin rgb(17,169,212);
+    float: right;
+    margin-top: 4%;
+    transition: all .3s;
+}
+
+form button:hover {
+    cursor: pointer;
+    background-color: rgb(17,169,212);
+    color: white;
+}
+
+form button:focus {
+    cursor: pointer;
+    background-color: rgb(17,169,212);
+    color: white;
+}
+
+img {
+    height: 125px;
+    width: 450px;
+    object-fit: contain;
+    object-position: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+h3 span {
+    color: rgb(17,169,212);
+}
+
+textarea {
+    resize: none;
+    display: block;
+    width: -webkit-fill-available;
+    border: solid thin rgb(17,169,212);
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+textarea:focus {
+    outline: none;
+    background-color: rgba(17,169,212, 0.4);
+}
+
+select {
+    width: -webkit-fill-available;
+    padding: 10px;
+    font-size: 1em;
+    border: solid thin rgb(17,169,212);
+    transition: all .3s;
+}
+
+select:focus {
+    outline: none;
+}
+
+select option {
+    text-align: center;
+    transition: all .3s;
+}
+
+select option:hover {
+    cursor: pointer;
+    background-color: rgba(17,169,212, 0.2);
+}
+
+.error {
+    color: red;
+    font-weight: 700;
+}
+
+.success {
+    color: green;
+    font-weight: 700;
+}
